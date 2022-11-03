@@ -12,6 +12,7 @@ Imports:
     broom,
     dplyr,
     ggplot2,
+    glue,
     magrittr,
     patchwork,
     stats
@@ -19,6 +20,7 @@ Depends:
     R (>= 2.10)
 LazyData: true
 Suggests: 
+    rmarkdown,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 URL: https://github.com/nicholasvella2/project

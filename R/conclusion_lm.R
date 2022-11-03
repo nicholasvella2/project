@@ -6,20 +6,17 @@
 #' @export
 
 conclusion_lm <- function(object){
-  project2022 <- NULL
 
-  name <- names(project2022)
-
+  name <- object$name
   beta_hat <- object$"Beta Hat"
   p_val <- object$"P-value"
 
 
   if (p_val >= 0.05) {
-    conclusion <- " There is no evidence that the slope (beta) is different than 0. There is no significant linear relationship between height and weight."
+    conclusion <- glue::glue("There is no evidence that the slope (beta) is different than 0. There is no significant linear relationship between {name[3]} and {name[4]}.")
   } else {
-    conclusion <- c("There is evidence that the slope (beta) is different than 0." ,
-                    "There is a significant linear relationship between weight and height.",
-                    "For each unit-increase in weight, height increases by approximately 0.2.")
+    in_decrease <- ifelse(beta_hat > 0, "increases", "decreases")
+    conclusion <- glue::glue("There is evidence that the slope (beta) is different than 0. There is a significant linear relationship between {name[3]} and {name[4]}. For each unit-increase in weight, height increases by {round(abs(beta_hat), 4)}.")
   }
   myconclusion <- list(title  = "CONCLUSION", "In Summary" = conclusion)
   class(myconclusion) <- c("mylm", "list")

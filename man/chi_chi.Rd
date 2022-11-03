@@ -4,10 +4,10 @@
 \alias{chi_chi}
 \title{Model for Chi-Squared test}
 \usage{
-chi_chi(project2022)
+chi_chi(data1)
 }
 \arguments{
-\item{project2022}{dataset}
+\item{data1}{A dataframe.Use "project2022" dataset for this.}
 }
 \value{
 Returns values as a list.

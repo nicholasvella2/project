@@ -4,10 +4,10 @@
 \alias{assumptions_t}
 \title{Assumptions for T-test}
 \usage{
-assumptions_t(project2022)
+assumptions_t(data1)
 }
 \arguments{
-\item{project2022}{dataset}
+\item{data1}{A dataframe.Use "project2022" dataset for this.}
 }
 \value{
 Returns assumptions as a list.

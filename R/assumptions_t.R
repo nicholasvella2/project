@@ -1,6 +1,6 @@
 #' Assumptions for T-test
 #' @description Provides the t-test graphical assumptions.
-#' @param project2022 dataset
+#' @param data1 A dataframe.Use "project2022" dataset for this.
 #' @return Returns assumptions as a list.
 #'
 #' @importFrom ggplot2 "ggplot" "geom_qq" "geom_qq_line" "xlab" "ylab" "facet_wrap" "ggtitle"
@@ -10,15 +10,16 @@
 
 
 
-assumptions_t <- function(project2022){
+assumptions_t <- function(data1){
   gender <- NULL
   height <- NULL
 
-  x_file <- project2022
+  x_file <- data1
 
   x_file1 <- x_file %>%
     group_by(gender)
 
+  #Q-Q plot
   plotqq <- ggplot(data = x_file1, aes(sample = height)) +
     geom_qq() +
     geom_qq_line() +

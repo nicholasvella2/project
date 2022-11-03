@@ -8,12 +8,13 @@
 conclusion_t <- function(object){
 
   p_val <- object$"P-value"
+  name <- object$name
 
 
   if (p_val >= 0.05) {
-    conclusion <- "There is no evidence that the sample means are different. There is no difference in height between Males and Females."
+    conclusion <- glue::glue("There is no evidence that the sample means are different. There is no difference in height between {name[2]}s.")
   } else {
-    conclusion <- "There is evidence that the sample means are different. There is a difference in height between Males and Females."
+    conclusion <- glue::glue("There is evidence that the sample means are different. There is a difference in height between {name[2]}s.")
 
   }
   myconclusion <- list(title  = "CONCLUSION", "In Summary" = conclusion)

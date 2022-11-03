@@ -8,12 +8,12 @@
 conclusion_chi <- function(object){
 
   p_val <- object$"P-value"
-
+  name <- object$name
 
   if (p_val >= 0.05) {
-    conclusion <- "There is no evidence that the variables are dependent.There is no association between gender and physical activity"
+    conclusion <- glue::glue("There is no evidence that the variables are dependent.There is no association between {name[2]} and {name[5]}.")
   } else {
-    conclusion <- "There is evidence that there is a relationship between the two variables. There is an association between gender and physical activity."
+    conclusion <- glue::glue("There is evidence that there is a relationship between the two variables. There is an association between {name[2]} and {name[5]}.")
 
   }
   myconclusion <- list(title  = "CONCLUSION", "In Summary" = conclusion)

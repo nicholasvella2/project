@@ -4,10 +4,10 @@
 \alias{mywrapper_lm}
 \title{Wrapper Function for Linear Regression Model}
 \usage{
-mywrapper_lm(project2022)
+mywrapper_lm(data1)
 }
 \arguments{
-\item{project2022}{dataset.}
+\item{data1.}{A dataset. Use "project2022" for this project.}
 }
 \value{
 Returns a series of cat/plots/tables.

@@ -4,10 +4,10 @@
 \alias{hypothesis_chi}
 \title{Hypotheses for Chi-Squared Test}
 \usage{
-hypothesis_chi(project2022)
+hypothesis_chi(data1)
 }
 \arguments{
-\item{project2022}{dataset}
+\item{data1}{A dataframe.Use "project2022" dataset for this.}
 }
 \value{
 Returns hypotheses as a list.

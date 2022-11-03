@@ -4,10 +4,10 @@
 \alias{ttest_t}
 \title{Model for T-test}
 \usage{
-ttest_t(project2022)
+ttest_t(data1)
 }
 \arguments{
-\item{project2022}{dataset}
+\item{data1}{A dataframe.Use "project2022" dataset for this.}
 }
 \value{
 Returns important values as a list.

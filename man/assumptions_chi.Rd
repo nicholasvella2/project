@@ -4,10 +4,10 @@
 \alias{assumptions_chi}
 \title{Assumptions for Chi-Squared Test}
 \usage{
-assumptions_chi(project2022)
+assumptions_chi(data1)
 }
 \arguments{
-\item{project2022}{dataset}
+\item{data1}{A dataframe.Use "project2022" dataset for this.}
 }
 \value{
 Returns list.

@@ -4,10 +4,10 @@
 \alias{mywrapper_t}
 \title{Wrapper Function for T-test}
 \usage{
-mywrapper_t(project2022)
+mywrapper_t(data1)
 }
 \arguments{
-\item{project2022}{dataset.}
+\item{data1}{A dataset. Use "project2022" for this project.}
 }
 \value{
 Returns a series of cat/plots/tables.

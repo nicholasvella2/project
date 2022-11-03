@@ -4,10 +4,10 @@
 \alias{mywrapper_chi}
 \title{Wrapper Function for Chi-Squared test}
 \usage{
-mywrapper_chi(project2022)
+mywrapper_chi(data1)
 }
 \arguments{
-\item{project2022}{dataset.}
+\item{data1}{A dataset. Use "project2022" for this project.}
 }
 \value{
 Returns a series of cat/plots/tables.

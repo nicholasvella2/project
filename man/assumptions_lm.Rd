@@ -4,10 +4,10 @@
 \alias{assumptions_lm}
 \title{Assumptions for Linear Model}
 \usage{
-assumptions_lm(project2022)
+assumptions_lm(data1)
 }
 \arguments{
-\item{project2022}{dataset}
+\item{data1}{A dataframe.Use "project2022" dataset for this.}
 }
 \value{
 Returns assumptions as a list.

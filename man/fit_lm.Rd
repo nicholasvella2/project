@@ -4,10 +4,10 @@
 \alias{fit_lm}
 \title{Model for Linear Regression}
 \usage{
-fit_lm(project2022)
+fit_lm(data1)
 }
 \arguments{
-\item{project2022}{dataset}
+\item{data1}{A dataframe.Use "project2022" dataset for this.}
 }
 \value{
 Returns values as a list.

@@ -14,6 +14,6 @@ decision_chi <- function(object){
   } else {
     mydecision <- list(title = "DECISION", "Reject NULL Hypothesis" = "YES")
   }
-  class(mydecision) <- c("mylm", "list")
+  class(mydecision) <- c("mychi", "list")
   return(mydecision)
 }
