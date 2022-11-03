@@ -1,10 +1,11 @@
 #' Wrapper Function for Linear Regression Model
 #' @description Calls the helper functions to provide output for the test.
-#' @param data1. A dataset. Use "project2022" for this project.
+#' @param data1 A dataset. Use "project2022" for this project.
 #' @return Returns a series of cat/plots/tables.
 #' @export
 
 mywrapper_lm <- function(data1){
+
   myhypothesis_lm <- hypothesis_lm(data1)
   myassumptions_lm <- assumptions_lm(data1)
   myfit_lm <- fit_lm(data1)

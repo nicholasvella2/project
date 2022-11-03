@@ -7,7 +7,7 @@
 mywrapper_lm(data1)
 }
 \arguments{
-\item{data1.}{A dataset. Use "project2022" for this project.}
+\item{data1}{A dataset. Use "project2022" for this project.}
 }
 \value{
 Returns a series of cat/plots/tables.

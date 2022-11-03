@@ -4,7 +4,7 @@
 #' @return Returns assumptions as a list.
 #'
 #' @importFrom ggplot2 "ggplot" "geom_qq" "geom_qq_line" "xlab" "ylab" "facet_wrap" "ggtitle"
-#' @importFrom stats "t.test"
+#' @importFrom stats "t.test" "var"
 #' @importFrom dplyr "group_by"
 #' @export
 
@@ -13,6 +13,7 @@
 assumptions_t <- function(data1){
   gender <- NULL
   height <- NULL
+  var <- NULL
 
   x_file <- data1
 
