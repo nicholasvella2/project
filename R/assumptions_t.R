@@ -27,7 +27,10 @@ assumptions_t <- function(data1){
     xlab("Theoretical") + ylab("Sample") +
     ggtitle("Q-Q plots")
 
-  myassumptions <- list(title = "ASSUMPTIONS", plots = plotqq)
+  h <- c(var(subset(x_file, gender == "Male", height)), var(subset(x_file, gender == "Female", height)))
+  j <- c("Male Variance" = h[1], "Female Variance" = h[2])
+
+  myassumptions <- list(title = "ASSUMPTIONS", plots = plotqq, j)
   class(myassumptions) <- c("myt", "list")
   return(myassumptions)
 }

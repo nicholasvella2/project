@@ -12,6 +12,9 @@ print.myt <- function(x, ...){
   cat(unlist(x[1]), "\n")
 
   if(names(x[2]) == "plots"){
+    cat("\n")
+    print(x[[3]])
+    cat("\n")
     print(x$plots)
   } else if((names(x[2]) != "expected") & (names(x[g]) == "name")){
     for(a in 2:(g-1)){
