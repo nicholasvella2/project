@@ -15,9 +15,6 @@ knitr::opts_chunk$set(
 
 # project
 
-<!-- badges: start -->
-<!-- badges: end -->
-
 The goal of project is to be able to input datasets into the functions to provide niceley outputted format to go onto statistical reports. 
 
 ## Installation
@@ -25,12 +22,13 @@ The goal of project is to be able to input datasets into the functions to provid
 You can install the development version of project like so:
 
 ``` r
-#First install devtool
+#First install devtools
 install.packages("devtools")
 library(devtools)
 
 #Then install from github URL
-install_github("")
+install_github("nicholasvella2/project")
+library(project)
 ```
 
 ## Example
@@ -39,14 +37,16 @@ This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
 ##install devtools first
+install.packages("devtools")
+library(devtools)
 
-## basic example code
+install_github("nicholasvella2/project")
+library(project)
+
+## Running the assumptions function for the linear model
+project::assumptions_lm(project2022)
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
 
-```{r cars}
-summary(cars)
-```
 
 
