@@ -57,7 +57,7 @@ Each test for the three research questions following the following format, and u
 
 * Stating null and alternate hypotheses
 * Checking the assumptions
-* Providing descriptive statistics
+* Providing descriptive statistics for the statistical tests
 * Providing a "decision" of the test
 * Providing a "conclusion" of the test
 
@@ -107,15 +107,15 @@ assumptions_chi(project2022)
 
 Checking the assumptions for the linear model (research question 1):
 
-* The observations are independent and identically distributed
-* Normality of residuals. This can be seen from the distribution of the histogram of residuals from the R output.
-* Uncorrelated residuals and fitted values. This can be seen from "fitted vs residuals" scatterplot. 
+* The scatterplot of Height vs Weight demonstrates that there could be a positive linear relationship. 
+* Normality of residuals. This can be seen from the "bell-curve" distribution of the histogram of residuals in the R outputt.
+* Uncorrelated residuals and fitted values. This can be seen from random distribution of values in the "fitted vs residuals" scatterplot. 
 
 Checking the assumptions for the t-test (research question 2): 
 
-* Equal variances: the variances of the samples clearly satisfy the rule of thumb
-* Normality of observations is shown by the points following the line in the q-q plots.
-* There are 1000 observations and therefore enough to satisfy the Central Limit Theorem. However, a power calcualtions has not been done. 
+* Equal variances: the variances of the samples (from the R output) clearly satisfy the rule of thumb. 
+* Normality of observations is shown by the points spread along the line in the q-q plots.
+* There are 1000 observations and therefore enough to satisfy the Central Limit Theorem. However, a power calculations has not been done. 
 
 Checking the assumptions for the chi-squared test (research question 3): 
 
@@ -148,7 +148,12 @@ decision_chi(mychi_chi)
 \newpage
 # Conclusion
 
-Conclusions to research questions 1,2, and 3 respectively (as calculated in R). The [@glue1] package was used in the functions to interpret the conclusion from the data-set:
+Conclusions to research questions 1,2, and 3 respectively (as calculated in R). The glue package [@glue1] was used in the functions to interpret the conclusion from the data-set:
+<br /> 
+\newline
+<br /> 
+\newline
+"Phys" in the conclusion addressing question 3 refers to physical activity*
 
 ```{r, echo=FALSE, eval=TRUE}
 library(project)
@@ -163,8 +168,9 @@ mychi_chi <- chi_chi(project2022)
 conclusion_chi(mychi_chi)
 ```
 
+
 ## Limitations
-&nbsp;One limitation of the study was the sample size. There was no power study conducted before sampling the subjects to determine the required sample size for the tests. The external validity of the results may be limited as the results may not be representative of the general population. The categorising of physical activity to "intense", "moderate", "none" provides very little information, as many other studies would take other measurements, such as "duration" for example. It was not also not clear how the physical activity was recorded. Therefore the ability to reproduce the results of this chi-squared, using the same methodology would be very limited. 
+&nbsp;One limitation of the study was the sample size. There was no power study conducted before sampling the subjects to determine the required sample size for the tests. The external validity of the results may be limited as the results may not be representative of the general population. The categorising of physical activity to "intense", "moderate", "none" provides very little information, as many other studies would take other measurements, such as "duration" or "frequency" for example. It was not also not clear how the physical activity fit into these categories. Therefore the ability to reproduce the results of this chi-squared, using the same methodology would be very limited. 
 
 \newpage
 # References
